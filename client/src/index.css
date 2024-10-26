@@ -1,10 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Montserrat", serif; */
+
+/* //navbar css */
+.navbar {
+	font-family: "Montserrat", serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	box-shadow: 0 8px 6px -6px rgb(220, 220, 220);
+	--webkit-box-shadow: 0 8px 6px -6px rgb(220, 220, 220);
+	border-bottom: 0.5px solid rgb(220, 220, 220);
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 3px;
+}
+
+.navbar-brand svg {
+	display: inline-block;
+	text-align: center;
+	line-height: 1.1em;
+}
+
+.nav-link {
+	font-weight: 400;
+}
+
+.active {
+	border-bottom: 1px solid black;
+}
+
+/* FOOTER */
+
+.footer {
+	color: white;
+	padding: 25px;
+	background-color: #000000;
+	background: -webkit-gradient(to right, #000000, #434343, #000000);
+	background: linear-gradient(to right, #000000, #434343, #000000);
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	transition: all 0.15s;
+}
+
+.footer a:hover {
+	color: rgb(183, 183, 183);
+}
+
+/* page not found */
+.pnf {
+	display: flex;
+	min-height: 65vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pnf-title {
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.pnf-heading {
+	font-weight: normal;
+}
+
+.pnf-btn {
+	color: #000000;
+	border: 1px solid black;
+	text-decoration: none;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 0.5em;
+	transition: all 0.15s;
+}
+
+.pnf-btn:hover {
+	background-color: #000000;
+	color: white;
+}
+
+.contactus,
+.aboutus {
+	display: flex;
+	padding: 1em;
+	justify-content: space-evenly;
+}
+
+.contactus p,
+.aboutus p {
+	font-size: 20px;
+}
