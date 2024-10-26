@@ -1,10 +1,10 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import morgan from 'morgan';
-import cors from 'cors';
-import colors from 'colors';
-import router from './routes/productRoutes.js';
-import connectDB from './config/db.js';
+import express from "express";
+import dotenv from "dotenv";
+import morgan from "morgan";
+import cors from "cors";
+import colors from "colors";
+import router from "./routes/authRoute.js";
+import connectDB from "./config/db.js";
 
 // configure env
 dotenv.config();
@@ -19,13 +19,15 @@ const app = express();
 
 // middlewares
 app.use(express.json());
-app.use(morgan('dev'));
-app.use('/api/products', router);
+app.use(morgan("dev"));
 app.use(cors());
 
+// routes
+app.use("/api/v1/auth", router);
+
 // REST api
-app.get('/', (req, res) => {
-	res.send('<h1>API is working</h1>');
+app.get("/", (req, res) => {
+	res.send("<h1>API is working</h1>");
 });
 
 // run listen
