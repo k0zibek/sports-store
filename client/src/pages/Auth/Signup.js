@@ -11,6 +11,7 @@ const Signup = () => {
 	const [phone, setPhone] = useState("");
 	const [address, setAdress] = useState("");
 	const [password, setPassword] = useState("");
+	const [answer, setAnswer] = useState("");
 	const navigate = useNavigate();
 
 	// form function
@@ -23,6 +24,7 @@ const Signup = () => {
 				phone,
 				address,
 				password,
+				answer,
 			});
 			if (res && res.data.success) {
 				toast.success(res && res.data.message);
@@ -91,6 +93,16 @@ const Signup = () => {
 							onChange={(e) => setPassword(e.target.value)}
 							id='password'
 							placeholder='Password'
+							required
+						/>
+					</div>
+					<div className='input-div'>
+						<input
+							type='text'
+							value={answer}
+							onChange={(e) => setAnswer(e.target.value)}
+							id='answer'
+							placeholder='What is Your best friend name?'
 							required
 						/>
 					</div>

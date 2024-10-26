@@ -6,6 +6,10 @@ import PageNotFound from "./pages/PageNotFound";
 import Signup from "./pages/Auth/Signup";
 import Login from "./pages/Auth/Login";
 import Dashboard from "./pages/User/Dashboard";
+import PrivateRoute from "./components/Routes/Private";
+import AdminDashboard from "./pages/Admin/AdminDashboard";
+import AdminRoute from "./components/Routes/AdminRoute";
+import ForgotPassword from "./pages/Auth/ForgotPassword";
 
 function App() {
 	return (
@@ -17,11 +21,29 @@ function App() {
 				/>
 				<Route
 					path='/dashboard'
-					element={<Dashboard />}
-				/>
+					element={<PrivateRoute />}
+				>
+					<Route
+						path='user'
+						element={<Dashboard />}
+					/>
+				</Route>
+				<Route
+					path='/dashboard'
+					element={<AdminRoute />}
+				>
+					<Route
+						path='admin'
+						element={<AdminDashboard />}
+					/>
+				</Route>
 				<Route
 					path='/signup'
 					element={<Signup />}
+				/>
+				<Route
+					path='/forgot-password'
+					element={<ForgotPassword />}
 				/>
 				<Route
 					path='/login'

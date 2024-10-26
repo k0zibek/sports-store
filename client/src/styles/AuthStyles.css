@@ -1,12 +1,18 @@
+.form-container {
+	padding-top: 4rem;
+}
+
 .form {
 	background: #fff;
 	border-radius: 20px;
 	border: none;
-	padding: 20px;
-	position: absolute;
+	padding: 1rem;
+	max-width: 360px;
+	margin: 0 auto;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -57%);
+	transform: translate(-50%, -57%); */
 }
 .form h1 {
 	text-align: center;
