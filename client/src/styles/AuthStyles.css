@@ -1,0 +1,100 @@
+.form {
+	background: #fff;
+	border-radius: 20px;
+	border: none;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -57%);
+}
+.form h1 {
+	text-align: center;
+	color: #212529;
+}
+.form .form-inputs {
+	margin-top: 16px;
+}
+.form-inputs .input-div {
+	padding: 5px;
+	width: 320px;
+}
+.input-div input {
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 14px;
+	outline: none;
+	background: #dee2e6;
+	margin: 5px 0;
+	font-size: 14px;
+}
+.input-div input:focus {
+	border: 1px solid #212529;
+}
+.input-div input::placeholder {
+	color: #6c757d;
+	font-size: 14px;
+}
+.button-div {
+	margin-top: 10px;
+	padding: 5px;
+}
+.button-div .btn-style {
+	width: 100%;
+	border-radius: 10px;
+	font-size: 16px;
+	border: none;
+	background-color: #212529;
+	padding: 10px 0;
+	color: #fff;
+	font-weight: 600;
+}
+.button-div .btn-style:hover {
+	transition: 0.4s;
+	cursor: pointer;
+	background-color: #343a40;
+}
+.register-link {
+	margin-top: 10px;
+}
+.register-link .redirect {
+	font-size: 14px;
+	color: #111;
+	text-align: center;
+}
+.redirect a {
+	text-decoration: none;
+	color: blue;
+	margin-left: 5px;
+}
+.redirect a:hover {
+	color: dodgerblue;
+	transition: 0.4s;
+}
+
+@media (max-width: 450px) {
+	.form h1 {
+		font-size: 26px;
+	}
+	.form-inputs .input-div {
+		width: 250px;
+	}
+	.input-div input {
+		font-size: 12px;
+		margin: 2px 0;
+	}
+	.input-div input::placeholder {
+		font-size: 12px;
+	}
+	.button-div {
+		margin-top: 2px;
+	}
+	.button-div .btn-style {
+		font-size: 14px;
+	}
+	.register-link .redirect {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,272 @@
+[
+	{
+		"id": 1,
+		"name": "Basketball",
+		"category": "Sports Equipment",
+		"price": 29.99,
+		"description": "Standard size 7 basketball suitable for indoor and outdoor use.",
+		"image": "https://m.media-amazon.com/images/I/61AOs9fftWL._AC_SL1000_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 2,
+		"name": "Running Shoes",
+		"category": "Footwear",
+		"price": 79.99,
+		"description": "Lightweight running shoes with superior cushioning for daily training.",
+		"image": "https://m.media-amazon.com/images/I/71-faiVNhdL._AC_SY575_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 3,
+		"name": "Yoga Mat",
+		"category": "Accessories",
+		"price": 19.99,
+		"description": "Eco-friendly yoga mat with non-slip surface for maximum stability.",
+		"image": "https://m.media-amazon.com/images/I/71exYHFfkPL._AC_SL1500_.jpg",
+		"inStock": false
+	},
+	{
+		"id": 4,
+		"name": "Tennis Racket",
+		"category": "Sports Equipment",
+		"price": 89.99,
+		"description": "Professional-grade tennis racket with graphite frame for precision.",
+		"image": "https://m.media-amazon.com/images/I/61tjCC5HMaL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 5,
+		"name": "Water Bottle",
+		"category": "Accessories",
+		"price": 9.99,
+		"description": "Durable stainless steel water bottle with 750ml capacity.",
+		"image": "https://m.media-amazon.com/images/I/71fxmFD9afL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 6,
+		"name": "Soccer Ball",
+		"category": "Sports Equipment",
+		"price": 25.99,
+		"description": "Size 5 soccer ball for outdoor play, durable and weather-resistant.",
+		"image": "https://m.media-amazon.com/images/I/61ESBrdZUxL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 7,
+		"name": "Hiking Boots",
+		"category": "Footwear",
+		"price": 120.99,
+		"description": "Waterproof hiking boots with excellent traction and ankle support.",
+		"image": "https://m.media-amazon.com/images/I/8102TOjqJ6L._AC_SY695_.jpg",
+		"inStock": false
+	},
+	{
+		"id": 8,
+		"name": "Cycling Helmet",
+		"category": "Accessories",
+		"price": 35.49,
+		"description": "Lightweight cycling helmet with adjustable fit and good ventilation.",
+		"image": "https://m.media-amazon.com/images/I/61kwdTx934S._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 9,
+		"name": "Swim Goggles",
+		"category": "Accessories",
+		"price": 15.0,
+		"description": "Anti-fog swim goggles with UV protection for clear underwater vision.",
+		"image": "https://m.media-amazon.com/images/I/71iRb8PynlL._AC_SX679_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 10,
+		"name": "Yoga Pants",
+		"category": "Apparel",
+		"price": 29.5,
+		"description": "Comfortable and flexible yoga pants, perfect for yoga and workouts.",
+		"image": "https://m.media-amazon.com/images/I/61h-IHFcqML._AC_SX466_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 11,
+		"name": "Compression Shirt",
+		"category": "Apparel",
+		"price": 19.99,
+		"description": "Breathable compression shirt that enhances circulation and performance.",
+		"image": "https://m.media-amazon.com/images/I/616zQdPYiVL._AC_SX569_.jpg",
+		"inStock": false
+	},
+	{
+		"id": 12,
+		"name": "Resistance Bands Set",
+		"category": "Sports Equipment",
+		"price": 14.99,
+		"description": "Set of 5 resistance bands, great for strength training and rehabilitation.",
+		"image": "https://m.media-amazon.com/images/I/61oIjYqfjCL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 13,
+		"name": "Dumbbell Set",
+		"category": "Sports Equipment",
+		"price": 49.99,
+		"description": "Adjustable dumbbell set with ergonomic grip and variable weight options.",
+		"image": "https://m.media-amazon.com/images/I/61oSwPvRWLL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 14,
+		"name": "Running Shorts",
+		"category": "Apparel",
+		"price": 24.99,
+		"description": "Lightweight and breathable running shorts with moisture-wicking fabric.",
+		"image": "https://m.media-amazon.com/images/I/61MTvyrS5WL._AC_SY741_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 15,
+		"name": "Sports Watch",
+		"category": "Accessories",
+		"price": 99.99,
+		"description": "Multifunctional sports watch with heart rate monitor and GPS.",
+		"image": "https://m.media-amazon.com/images/I/71RA4WUklbL._AC_SY695_.jpg",
+		"inStock": false
+	},
+	{
+		"id": 16,
+		"name": "Boxing Gloves",
+		"category": "Sports Equipment",
+		"price": 45.0,
+		"description": "Durable boxing gloves with extra padding for training and sparring.",
+		"image": "https://m.media-amazon.com/images/I/8138J+FRjuL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 17,
+		"name": "Basketball Jersey",
+		"category": "Apparel",
+		"price": 39.99,
+		"description": "Breathable basketball jersey with team-inspired design.",
+		"image": "https://m.media-amazon.com/images/I/71T+d0wOTWL._AC_SX569_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 18,
+		"name": "Soccer Cleats",
+		"category": "Footwear",
+		"price": 89.99,
+		"description": "High-performance soccer cleats for firm-ground surfaces.",
+		"image": "https://m.media-amazon.com/images/I/71AJFXd9TmL._AC_SX695_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 19,
+		"name": "Sports Sunglasses",
+		"category": "Accessories",
+		"price": 22.5,
+		"description": "UV-protective sports sunglasses with polarized lenses.",
+		"image": "https://m.media-amazon.com/images/I/519NkQ0KIOL._AC_SY695_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 20,
+		"name": "Jump Rope",
+		"category": "Sports Equipment",
+		"price": 8.99,
+		"description": "Adjustable jump rope with comfortable handles, great for cardio training.",
+		"image": "https://m.media-amazon.com/images/I/71wm42EtoNL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 21,
+		"name": "Golf Club Set",
+		"category": "Sports Equipment",
+		"price": 249.99,
+		"description": "Complete golf club set with bag, perfect for beginners and intermediate players.",
+		"image": "https://m.media-amazon.com/images/I/71mCg4W4mRL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 22,
+		"name": "Treadmill",
+		"category": "Sports Equipment",
+		"price": 299.99,
+		"description": "High-end treadmill with various speed settings and incline options.",
+		"image": "https://m.media-amazon.com/images/I/71o9ME7okQL._AC_SL1500_.jpg",
+		"inStock": false
+	},
+	{
+		"id": 23,
+		"name": "Ski Jacket",
+		"category": "Apparel",
+		"price": 129.99,
+		"description": "Waterproof ski jacket with insulation for warmth in snowy conditions.",
+		"image": "https://m.media-amazon.com/images/I/71ih9UvzJUL._AC_SY550_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 24,
+		"name": "Baseball Cap",
+		"category": "Accessories",
+		"price": 14.99,
+		"description": "Adjustable baseball cap with breathable fabric, available in multiple colors.",
+		"image": "https://m.media-amazon.com/images/I/61mWGBX-o9L._AC_SX679_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 25,
+		"name": "Yoga Block",
+		"category": "Accessories",
+		"price": 8.99,
+		"description": "High-density foam yoga block for better alignment and support.",
+		"image": "https://m.media-amazon.com/images/I/71Ks6IYUkbL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 26,
+		"name": "Punching Bag",
+		"category": "Sports Equipment",
+		"price": 34.99,
+		"description": "Heavy-duty punching bag with durable outer cover for intensive training.",
+		"image": "https://m.media-amazon.com/images/I/610VGozNIRL._AC_SL1500_.jpg",
+		"inStock": false
+	},
+	{
+		"id": 27,
+		"name": "Cycling Gloves",
+		"category": "Accessories",
+		"price": 15.99,
+		"description": "Breathable and padded cycling gloves for comfortable grip and protection.",
+		"image": "https://m.media-amazon.com/images/I/71wpe6tni-L._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 28,
+		"name": "Climbing Shoes",
+		"category": "Footwear",
+		"price": 99.95,
+		"description": "Tight-fit climbing shoes with grippy soles for enhanced wall traction.",
+		"image": "https://m.media-amazon.com/images/I/71IHV1AgvXS._AC_SX569_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 29,
+		"name": "Foam Roller",
+		"category": "Accessories",
+		"price": 18.99,
+		"description": "Firm foam roller for muscle recovery and myofascial release exercises.",
+		"image": "https://m.media-amazon.com/images/I/61TTTwb8TlL._AC_SL1500_.jpg",
+		"inStock": true
+	},
+	{
+		"id": 30,
+		"name": "Ski Goggles",
+		"category": "Accessories",
+		"price": 36.99,
+		"description": "Anti-fog ski goggles with UV protection, ideal for snowy environments.",
+		"image": "https://m.media-amazon.com/images/I/610nX1mLEYL._AC_SX679_.jpg",
+		"inStock": true
+	}
+]
