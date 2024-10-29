@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 450px) {
+	.form {
+		max-width: 280px;
+	}
 	.form h1 {
 		font-size: 26px;
 	}
