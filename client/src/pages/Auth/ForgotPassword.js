@@ -37,10 +37,7 @@ const ForgotPassword = () => {
 		<Layout title={"Forgot Password"}>
 			<div className='form-container'>
 				<div class='form'>
-					<form
-						className='form-inputs'
-						onSubmit={handleSubmit}
-					>
+					<form className='form-inputs' onSubmit={handleSubmit}>
 						<h1 class='title'>RESET PASSWORD</h1>
 						<div className='input-div'>
 							<input
@@ -73,11 +70,7 @@ const ForgotPassword = () => {
 							/>
 						</div>
 						<div className='button-div'>
-							<button
-								type='submit'
-								className='btn-style'
-								id='btn'
-							>
+							<button type='submit' className='btn-style' id='btn'>
 								Reset
 							</button>
 						</div>
