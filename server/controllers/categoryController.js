@@ -50,7 +50,7 @@ export const updateCategoryController = async (req, res) => {
 	}
 };
 
-export const allCategoriesController = async (req, res) => {
+export const getAllCategoriesController = async (req, res) => {
 	try {
 		const category = await categoryModel.find({});
 		res.status(200).send({
@@ -68,7 +68,7 @@ export const allCategoriesController = async (req, res) => {
 	}
 };
 
-export const singleCategoryController = async (req, res) => {
+export const getSingleCategoryController = async (req, res) => {
 	try {
 		const category = await categoryModel.findOne({ slug: req.params.slug });
 		res.status(200).send({

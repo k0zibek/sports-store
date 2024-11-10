@@ -5,6 +5,7 @@ import cors from "cors";
 import colors from "colors";
 import router from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
 import connectDB from "./config/db.js";
 
 // configure env
@@ -26,6 +27,7 @@ app.use(cors());
 // routes
 app.use("/api/v1/auth", router);
 app.use("/api/v1/category", categoryRoutes);
+app.use("/api/v1/product", productRoutes);
 
 // REST api
 app.get("/", (req, res) => {
