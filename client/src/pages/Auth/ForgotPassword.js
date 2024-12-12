@@ -36,9 +36,9 @@ const ForgotPassword = () => {
 	return (
 		<Layout title={"Forgot Password"}>
 			<div className='form-container'>
-				<div class='form'>
+				<div className='form'>
 					<form className='form-inputs' onSubmit={handleSubmit}>
-						<h1 class='title'>RESET PASSWORD</h1>
+						<h1 className='title'>RESET PASSWORD</h1>
 						<div className='input-div'>
 							<input
 								type='email'

@@ -41,10 +41,7 @@ const Signup = () => {
 	return (
 		<Layout title={"Sign up - Sports store"}>
 			<div class='form'>
-				<form
-					className='form-inputs'
-					onSubmit={handleSubmit}
-				>
+				<form className='form-inputs' onSubmit={handleSubmit}>
 					<h1 class='title'>SIGN UP</h1>
 					<div className='input-div'>
 						<input
@@ -107,16 +104,12 @@ const Signup = () => {
 						/>
 					</div>
 					<div className='button-div'>
-						<button
-							type='submit'
-							className='btn-style'
-							id='btn'
-						>
+						<button type='submit' className='btn-style' id='btn'>
 							Submit
 						</button>
 					</div>
-					<div class='register-link'>
-						<p class='redirect'>
+					<div className='register-link'>
+						<p className='redirect'>
 							Already have an account?<NavLink to='/login'>Login now</NavLink>
 						</p>
 					</div>
