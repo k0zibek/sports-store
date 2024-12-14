@@ -27,8 +27,8 @@ const Signup = () => {
 				answer,
 			});
 			if (res && res.data.success) {
-				toast.success(res && res.data.message);
 				navigate("/login");
+				toast.success(res.data.message);
 			} else {
 				toast.error(res.data.message);
 			}

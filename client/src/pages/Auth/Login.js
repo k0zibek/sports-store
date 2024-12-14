@@ -23,14 +23,16 @@ const Login = () => {
 				password,
 			});
 			if (res && res.data.success) {
-				toast.success(res && res.data.message);
-				setAuth({
+				toast.success(res.data.message);
+				await setAuth({
 					...auth,
 					user: res.data.user,
 					token: res.data.token,
 				});
-				localStorage.setItem("auth", JSON.stringify(res.data));
-				navigate(location.state || "/");
+				setTimeout(() => {
+					localStorage.setItem("auth", JSON.stringify(res.data));
+					navigate(location.state || "/");
+				}, 100);
 			} else {
 				toast.error(res.data.message);
 			}

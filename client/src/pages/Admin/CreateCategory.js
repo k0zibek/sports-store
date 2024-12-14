@@ -9,11 +9,11 @@ import { Modal } from "antd";
 const CreateCategory = () => {
 	const [categories, setCategories] = useState([]);
 	const [name, setName] = useState("");
-	const [visible, setVisible] = useState(false);
 	const [selected, setSelected] = useState(null);
 	const [updatedName, setUpdatedName] = useState("");
+	const [isModalOpen, setIsModalOpen] = useState(false);
 
-	// handle form
+	// form submit
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
@@ -37,6 +37,7 @@ const CreateCategory = () => {
 			const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/category/all-categories`);
 			if (data.success) {
 				setCategories(data.category);
+				console.log(data.category);
 			}
 		} catch (error) {
 			console.log(error);
@@ -48,7 +49,7 @@ const CreateCategory = () => {
 		getAllCategories();
 	}, []);
 
-	// update category
+	// update Category
 	const handleUpdate = async (e) => {
 		e.preventDefault();
 		try {
@@ -60,7 +61,7 @@ const CreateCategory = () => {
 				toast.success(`${updatedName} is updated`);
 				setSelected(null);
 				setUpdatedName("");
-				setVisible(false);
+				setIsModalOpen(false);
 				getAllCategories();
 			} else {
 				toast.error(data.message);
@@ -70,7 +71,7 @@ const CreateCategory = () => {
 		}
 	};
 
-	// handle delete
+	// delete Category
 	const handleDelete = async (pid) => {
 		try {
 			const { data } = await axios.delete(`${process.env.REACT_APP_API}/api/v1/category/delete-category/${pid}`);
@@ -101,20 +102,21 @@ const CreateCategory = () => {
 							<table className='table'>
 								<thead>
 									<tr>
+										<th scope='col'></th>
 										<th scope='col'>Name</th>
 										<th scope='col'>Actions</th>
 									</tr>
 								</thead>
 								<tbody>
-									{categories?.map((c) => (
+									{categories?.map((c, index) => (
 										<tr key={c._id}>
+											<th>{index + 1}</th>
 											<td className='m-1'>{c.name}</td>
 											<td>
-												{/* Здесь можно добавить действия, например, кнопки редактирования или удаления */}
 												<button
 													className='btn btn-sm btn-primary ms-2'
 													onClick={() => {
-														setVisible(true);
+														setIsModalOpen(true);
 														setUpdatedName(c.name);
 														setSelected(c);
 													}}>
@@ -133,7 +135,11 @@ const CreateCategory = () => {
 								</tbody>
 							</table>
 						</div>
-						<Modal onCancel={() => setVisible(false)} footer={null} open={visible}>
+						<Modal
+							title='Edit category name'
+							onCancel={() => setIsModalOpen(false)}
+							footer={null}
+							open={isModalOpen}>
 							<CreateForm value={updatedName} setValue={setUpdatedName} handleSubmit={handleUpdate} />
 						</Modal>
 					</div>

@@ -4,7 +4,13 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import { Toaster } from "react-hot-toast";
 
-const Layout = ({ children, title, description, keywords, author }) => {
+const Layout = ({
+	children,
+	title = "Default Title",
+	description = "Default Description",
+	keywords = "default, keywords",
+	author = "Default Author",
+}) => {
 	return (
 		<div>
 			<Helmet>
