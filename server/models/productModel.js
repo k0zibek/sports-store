@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema(
 		},
 		slug: {
 			type: String,
-			required: true,
+			unique: true,
 		},
 		description: {
 			type: String,
@@ -19,7 +19,7 @@ const productSchema = new mongoose.Schema(
 			required: true,
 		},
 		category: {
-			type: mongoose.ObjectId,
+			type: mongoose.Schema.Types.ObjectId,
 			ref: "category",
 			required: true,
 		},
@@ -33,6 +33,7 @@ const productSchema = new mongoose.Schema(
 		},
 		shipping: {
 			type: Boolean,
+			default: false,
 		},
 	},
 	{ timestamps: true }

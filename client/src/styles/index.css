@@ -121,3 +121,10 @@ body {
 	height: 70vh;
 	flex-direction: column;
 }
+
+/* product */
+
+.product-link {
+	text-decoration: none !important;
+	color: #000000 !important;
+}

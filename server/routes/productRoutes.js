@@ -9,25 +9,26 @@ import {
 	deleteProductController,
 } from "./../controllers/productController.js";
 import formidable from "express-formidable";
+import { validateObjectId } from "./../middlewares/validationMiddleware.js";
 
 const router = express.Router();
 
-// routes
+// Create product
 router.post("/create-product", requireSignIn, isAdmin, formidable(), createProductController);
 
-// update
-router.put("/update-product/:pid", requireSignIn, isAdmin, formidable(), updateProductController);
+// Update product
+router.put("/update-product/:pid", requireSignIn, isAdmin, validateObjectId, formidable(), updateProductController);
 
-// get all products
+// Get all products
 router.get("/get-products", getAllProductsController);
 
-// get single product
+// Get single product
 router.get("/get-product/:slug", getSingleProductController);
 
-// get photo
-router.get("/product-photo/:pid", getProductPhotoController);
+// Get product photo
+router.get("/product-photo/:pid", validateObjectId, getProductPhotoController);
 
-// delete product
-router.delete("/delete-product/:pid", deleteProductController);
+// Delete product
+router.delete("/delete-product/:pid", requireSignIn, isAdmin, validateObjectId, deleteProductController);
 
 export default router;

@@ -20,9 +20,9 @@ connectDB();
 const app = express();
 
 // middlewares
-app.use(express.json());
-app.use(morgan("dev"));
 app.use(cors());
+app.use(morgan("dev"));
+app.use(express.json());
 
 // routes
 app.use("/api/v1/auth", router);
@@ -34,7 +34,22 @@ app.get("/", (req, res) => {
 	res.send("<h1>API is working</h1>");
 });
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).json({
+		success: false,
+		message: "Internal Server Error",
+		error: err.message,
+	});
+});
+
 // run listen
 app.listen(PORT, () => {
-	console.log(`Server running on ${DEV_MODE} mode on port ${PORT}`.bgCyan.white);
+	console.log(`Server is running in ${DEV_MODE} mode on port ${PORT}`.bgCyan.white);
+	console.log(`API Documentation: http://localhost:${PORT}`.cyan);
 });
+
+// /api/v1/product/product-photo/676066a3c6e93b169816db83
+// /api/v1/product/update-product/676066a3c6e93b169816db83
+// 676066a3c6e93b169816db83
